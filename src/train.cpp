@@ -3,11 +3,9 @@
 Train::Train() {
     first = nullptr;
     countOp = 0;
-Cage {
-  false, nullPtr, nullPtr;
-}
+Cage {false, nullptr, nullptr};
 
-void addCage(bool light2) {
+void Train::addCage(bool light2) {
   Cage *newCage = new Cage;
   newCage->light = light2;
 
