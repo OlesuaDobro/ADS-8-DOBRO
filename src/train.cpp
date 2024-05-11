@@ -1,23 +1,15 @@
 // Copyright 2021 NNTU-CS
 #include "train.h"
-class Train {
- private:
-struct Cage {
-bool light;
-Cage *next;
-Cage *prev;
-};
-int countop;
-Cage *first;
-
 Train::Train() {
     first = nullptr;
     countOp = 0;
+ Cage {
+  false, nullPtr, nullPtr;
 }
 
-void addCage(bool light) {
+void addCage(bool light2) {
   Cage *newCage = new Cage;
-  newCage->light = light;
+  newCage->light = light2;
 
   if (first == nullptr) {
       first = newCage;
