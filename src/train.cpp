@@ -10,10 +10,9 @@ cage *prev;
 int countop;
 cage *first;
 
- public:
-Train() {
-countop = 0;
-first = nullptr;
+Train::Train() {
+    first = nullptr;
+    countOp = 0;
 }
 
 void addcage(bool light) {
