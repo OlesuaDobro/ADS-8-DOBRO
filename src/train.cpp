@@ -41,7 +41,8 @@ int Train::getLength() {
             for (int i = 0; i < maxlength; i++) {
                 current = current->prev;
                 countOp++;
-            } if (current->light == false)
+            }
+            if (current->light == false)
                 return maxlength;
         }
     }
