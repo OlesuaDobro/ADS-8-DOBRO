@@ -1,14 +1,14 @@
-#include "train.h" 
-Train::Train() { 
-    first = nullptr; 
-    countOp = 0; 
-} 
+#include "train.h"
+Train::Train() {
+    first = nullptr;
+    countOp = 0;
+}
 Cage {false, nullptr, nullptr};
- 
+
 void Train::addCage(bool light2) {
   Cage *newCage = new Cage;
   newCage->light = light2;
- 
+
   if (first == nullptr) {
       first = newCage;
       newCage->next = first;
