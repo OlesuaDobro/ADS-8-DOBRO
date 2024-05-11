@@ -35,5 +35,6 @@ int Train::getlength() {
   } while (currentCage != first);
   return length;
 }
-int Train::getopcount() {
+int Train::getOpCount() {
   return countOp;
+}
