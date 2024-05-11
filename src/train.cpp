@@ -2,21 +2,21 @@
 #include "train.h"
 class Train {
  private:
-struct cage {
+struct Cage {
 bool light;
-cage *next;
-cage *prev;
+Cage *next;
+Cage *prev;
 };
 int countop;
-cage *first;
+Cage *first;
 
 Train::Train() {
     first = nullptr;
     countOp = 0;
 }
 
-void addcage(bool light) {
-  cage *newCage = new cage;
+void addCage(bool light) {
+  Cage *newCage = new Cage;
   newCage->light = light;
 
   if (first == nullptr) {
@@ -24,7 +24,7 @@ void addcage(bool light) {
       newCage->next = first;
       newCage->prev = first;
   } else {
-      cage *lastCage = first->prev;
+      Cage *lastCage = first->prev;
       newCage->next = first;
       newCage->prev = lastCage;
       lastCage->next = newCage;
@@ -33,7 +33,7 @@ void addcage(bool light) {
 }
 int getlength() {
   int length = 0;
-  cage *currentCage = first;
+  Cage *currentCage = first;
   do {
       length++;
       currentCage = currentCage->next;
