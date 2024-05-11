@@ -19,7 +19,7 @@ Train() {
 void addcage(bool light) {
    cage *newCage = new cage;
    newCage->light = light;
- 
+
    if (first == nullptr) {
       first = newCage;
       newCage->next = first;
