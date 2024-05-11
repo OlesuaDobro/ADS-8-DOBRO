@@ -3,7 +3,7 @@
 Train::Train() {
     first = nullptr;
     countOp = 0;
- Cage {
+Cage {
   false, nullPtr, nullPtr;
 }
 
@@ -35,4 +35,3 @@ int getlength() {
 int getopcount() {
   return countop;
 }
-};
